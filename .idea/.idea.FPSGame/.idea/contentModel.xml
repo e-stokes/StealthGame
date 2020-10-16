@@ -43425,6 +43425,7 @@
             <e p="FPSHUD.cpp" t="Include" />
             <e p="FPSObjectiveActor.cpp" t="Include" />
             <e p="FPSProjectile.cpp" t="Include" />
+            <e p="LaunchPad.cpp" t="Include" />
           </e>
           <e p="Public" t="Include">
             <e p="BlackHole.h" t="Include" />
@@ -43434,6 +43435,7 @@
             <e p="FPSHUD.h" t="Include" />
             <e p="FPSObjectiveActor.h" t="Include" />
             <e p="FPSProjectile.h" t="Include" />
+            <e p="LaunchPad.h" t="Include" />
           </e>
         </e>
         <e p="FPSGame.Target.cs" t="Include" />
