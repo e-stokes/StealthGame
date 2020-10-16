@@ -39,6 +39,7 @@ ABlackHole::ABlackHole()
 	Force->RemoveObjectTypeToAffect(UEngineTypes::ConvertToObjectType(ECC_Pawn));
 	Force->RemoveObjectTypeToAffect(UEngineTypes::ConvertToObjectType(ECC_Vehicle));
 	Force->RemoveObjectTypeToAffect(UEngineTypes::ConvertToObjectType(ECC_Destructible));
+	Force->AddCollisionChannelToAffect(ECC_Pawn);
 	Force->SetupAttachment(RootComponent);
 
 	EffectTimer = 20.f;
@@ -70,14 +71,16 @@ void ABlackHole::BeginPlay()
 		QueryParams, CollisionShape);
 
 	// Iterates over the objects that overlap with the Black Hole Radius
-	for (FOverlapResult Result: OverlapResults)
+	for (FOverlapResult Result : OverlapResults)
 	{
 		AActor* Overlap = Result.GetActor();
 
 		if (Overlap)
 		{
+
 			TTuple<AActor*, FVector>MapTuple = TTuple<AActor*, FVector>(Overlap, Overlap->GetActorScale3D());
 			AffectedActorMap.Add(MapTuple);
+			
 		}
 	}
 
@@ -103,6 +106,7 @@ void ABlackHole::EndBlackHole()
 	}
 	AffectedActorMap.Empty();
 
+	
 	//Explode Items
 	TArray<FOverlapResult> OverlapResults;
 	FCollisionObjectQueryParams QueryParams;
@@ -111,6 +115,7 @@ void ABlackHole::EndBlackHole()
 	FCollisionShape CollisionShape;
 	CollisionShape.SetSphere(ExplosionRadius);
 
+	
 	GetWorld()->OverlapMultiByObjectType(OverlapResults, GetActorLocation(), FQuat::Identity,
 		QueryParams, CollisionShape);
 
@@ -122,9 +127,9 @@ void ABlackHole::EndBlackHole()
 		{
 			Overlap->AddRadialImpulse(GetActorLocation(), ExplosionRadius, ExplosionStrength, RIF_Constant);
 		}
+		
 	}
-
-	Destroy();
+	//Destroy();
 	
 	
 }
@@ -134,6 +139,7 @@ void ABlackHole::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+	
 	if (AffectedActorMap.Num() > 0)
 	{
 		for (const TPair<AActor*, FVector>&Pair : AffectedActorMap)

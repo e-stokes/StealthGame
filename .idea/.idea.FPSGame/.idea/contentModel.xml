@@ -43419,6 +43419,7 @@
           <e p="FPSGame.h" t="Include" />
           <e p="Private" t="Include">
             <e p="BlackHole.cpp" t="Include" />
+            <e p="ExtractionZone.cpp" t="Include" />
             <e p="FPSCharacter.cpp" t="Include" />
             <e p="FPSGameMode.cpp" t="Include" />
             <e p="FPSHUD.cpp" t="Include" />
@@ -43427,6 +43428,7 @@
           </e>
           <e p="Public" t="Include">
             <e p="BlackHole.h" t="Include" />
+            <e p="ExtractionZone.h" t="Include" />
             <e p="FPSCharacter.h" t="Include" />
             <e p="FPSGameMode.h" t="Include" />
             <e p="FPSHUD.h" t="Include" />

@@ -5,20 +5,47 @@
     <projectFile>Intermediate/ProjectFiles/UE4.vcxproj</projectFile>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d938904-eca1-40e5-9365-068a628a96f8" name="Default Changelist" comment="" />
+    <list default="true" id="9d938904-eca1-40e5-9365-068a628a96f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_ExtractionZone.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Spectator.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/UI/WBP_GameOver.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_FPSGameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_FPSGameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Player.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/SpawnBox_M.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/SpawnBox_M.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Materials/SpawnBox_M_Inst.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Materials/SpawnBox_M_Inst.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_ObjectiveInfo.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_ObjectiveInfo.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/BlackHole.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/BlackHole.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSObjectiveActor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSObjectiveActor.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSObjectiveActor.cpp" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSObjectiveActor.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/BlackHole.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/BlackHoleSpell.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/BlackHoleSpell.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/BlackHole.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/ExtractionZone.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/ExtractionZone.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" />
       </list>
     </option>
   </component>
@@ -261,37 +288,48 @@
       <option name="presentableId" value="Default" />
       <updated>1602691838249</updated>
       <workItem from="1602691854902" duration="23077000" />
+      <workItem from="1602727288897" duration="15000" />
+      <workItem from="1602727347131" duration="631000" />
+      <workItem from="1602763632928" duration="1000" />
+      <workItem from="1602764084703" duration="250000" />
+      <workItem from="1602764390005" duration="87000" />
+      <workItem from="1602764518028" duration="727000" />
+      <workItem from="1602765322513" duration="77000" />
+      <workItem from="1602765533443" duration="4301000" />
+      <workItem from="1602771114530" duration="89000" />
+      <workItem from="1602771371141" duration="252000" />
+      <workItem from="1602772151818" duration="5087000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1236" height="402" key="GridCell.Tab.0.bottom" timestamp="1602726504065">
+    <state width="2517" height="398" key="GridCell.Tab.0.bottom" timestamp="1602765251829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1236" height="402" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1602726504065" />
-    <state width="1236" height="402" key="GridCell.Tab.0.center" timestamp="1602726504065">
+    <state width="2517" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1602765251829" />
+    <state width="2517" height="398" key="GridCell.Tab.0.center" timestamp="1602765251828">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1236" height="402" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1602726504065" />
-    <state width="1236" height="402" key="GridCell.Tab.0.left" timestamp="1602726504065">
+    <state width="2517" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1602765251828" />
+    <state width="2517" height="398" key="GridCell.Tab.0.left" timestamp="1602765251828">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1236" height="402" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1602726504065" />
-    <state width="1236" height="402" key="GridCell.Tab.0.right" timestamp="1602726504065">
+    <state width="2517" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1602765251828" />
+    <state width="2517" height="398" key="GridCell.Tab.0.right" timestamp="1602765251829">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1236" height="402" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1602726504065" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1602693687784">
+    <state width="2517" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1602765251829" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1602772604524">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1602693687784" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1602772604524" />
   </component>
 </project>
