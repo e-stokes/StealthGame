@@ -5,6 +5,7 @@
 
 #include "FPSCharacter.h"
 #include "Components/BoxComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 // Sets default values
 ALaunchPad::ALaunchPad()
@@ -14,22 +15,19 @@ ALaunchPad::ALaunchPad()
 
 	// main mesh for launch pad
 	MeshComp = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("MeshComponent"));
-	MeshComp->SetCollisionResponseToAllChannels(ECR_Ignore);
 	RootComponent = MeshComp;
 
 	// collision mesh for launch pad - this will launch the player into the air when player overlaps
 	OverlapComp = CreateDefaultSubobject<UBoxComponent>(TEXT("OverlapComp"));
-	OverlapComp->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	OverlapComp->SetCollisionResponseToAllChannels(ECR_Ignore);
-	OverlapComp->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);
+	OverlapComp->SetBoxExtent(FVector(75, 75, 50));
 	OverlapComp->SetupAttachment(RootComponent);
 
 	// calls function on overlap
 	OverlapComp->OnComponentBeginOverlap.AddDynamic(this, &ALaunchPad::LaunchOnOverlap);
 
 	
-	LaunchVelocity = 10000.f;
-	LaunchHeight = 500.f;
+	LaunchStrength = 1500.f;
+	LaunchAngle = 45.f;
 	
 	
 
@@ -55,12 +53,29 @@ void ALaunchPad::Tick(float DeltaTime)
 void ALaunchPad::LaunchOnOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor,
 	UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
-	AFPSCharacter* MyPawn = Cast<AFPSCharacter>(OtherActor);
-	if (MyPawn == nullptr) return;
+	// Rotation with current pitch and convert to a direction vector * intensity
+	FRotator LaunchDirection = GetActorRotation();
+	LaunchDirection.Pitch += LaunchAngle;
+	FVector LaunchVelocity = LaunchDirection.Vector() * LaunchStrength;
 
-	if (MyPawn || )
+	
+	ACharacter* MyPawn = Cast<ACharacter>(OtherActor);
+	
+	if (MyPawn)
 	{
-		MyPawn->LaunchCharacter(FVector(LaunchVelocity), true, true);
+		// Launch Character
+		MyPawn->LaunchCharacter(LaunchVelocity, true, true);
+
+		// Spawns effect at launch pad location
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), LaunchEffect, GetActorLocation());
+	}
+	else if (OtherComp && OtherComp->IsSimulatingPhysics())
+	{
+		// Launch component simulating physics
+		OtherComp->AddImpulse(LaunchVelocity, NAME_None, true);
+
+		// Spawns effect at launch pad location
+		UGameplayStatics::SpawnEmitterAtLocation(GetWorld(), LaunchEffect, GetActorLocation());
 	}
 }
 
