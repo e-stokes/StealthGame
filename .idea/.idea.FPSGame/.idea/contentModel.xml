@@ -43418,6 +43418,7 @@
           <e p="FPSGame.cpp" t="Include" />
           <e p="FPSGame.h" t="Include" />
           <e p="Private" t="Include">
+            <e p="AIGuard.cpp" t="Include" />
             <e p="BlackHole.cpp" t="Include" />
             <e p="ExtractionZone.cpp" t="Include" />
             <e p="FPSCharacter.cpp" t="Include" />
@@ -43428,6 +43429,7 @@
             <e p="LaunchPad.cpp" t="Include" />
           </e>
           <e p="Public" t="Include">
+            <e p="AIGuard.h" t="Include" />
             <e p="BlackHole.h" t="Include" />
             <e p="ExtractionZone.h" t="Include" />
             <e p="FPSCharacter.h" t="Include" />

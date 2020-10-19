@@ -6,15 +6,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d938904-eca1-40e5-9365-068a628a96f8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Private/AIGuard.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Public/AIGuard.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Config/DefaultEditor.ini" beforeDir="false" afterPath="$PROJECT_DIR$/Config/DefaultEditor.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_LaunchPad.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_LaunchPad.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Challenges/LaunchPad/M_LaunchPAd.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Challenges/LaunchPad/M_LaunchPAd.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Challenges/LaunchPad/M_LaunchPadBase.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Challenges/LaunchPad/M_LaunchPadBase.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap_BuiltData.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/LaunchPad.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/LaunchPad.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/LaunchPad.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/LaunchPad.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/ExtractionZone.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/ExtractionZone.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +35,24 @@
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/BlackHoleSpell.cpp" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/BlackHoleSpell.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/BlackHole.cpp" />
-        <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/ExtractionZone.h" />
-        <option value="$PROJECT_DIR$/Source/FPSGame/Private/ExtractionZone.cpp" />
-        <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" />
-        <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/LaunchPad.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/LaunchPad.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/ExtractionZone.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/AIGuard.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/AIGuard.cpp" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1isMR9o3P1UKwCprTekrvV7C1kq" />
   <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
@@ -295,7 +303,7 @@
       <workItem from="1602772151818" duration="5604000" />
       <workItem from="1602812716229" duration="4743000" />
       <workItem from="1602849383030" duration="1807000" />
-      <workItem from="1603108371670" duration="3336000" />
+      <workItem from="1603108371670" duration="11513000" />
     </task>
     <servers />
   </component>
@@ -308,29 +316,29 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="398" key="GridCell.Tab.0.bottom" timestamp="1603111050291">
+    <state width="2517" height="398" key="GridCell.Tab.0.bottom" timestamp="1603126020278">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1603111050291" />
-    <state width="2517" height="398" key="GridCell.Tab.0.center" timestamp="1603111050291">
+    <state width="2517" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1603126020278" />
+    <state width="2517" height="398" key="GridCell.Tab.0.center" timestamp="1603126020278">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1603111050291" />
-    <state width="2517" height="398" key="GridCell.Tab.0.left" timestamp="1603111050291">
+    <state width="2517" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1603126020278" />
+    <state width="2517" height="398" key="GridCell.Tab.0.left" timestamp="1603126020278">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1603111050291" />
-    <state width="2517" height="398" key="GridCell.Tab.0.right" timestamp="1603111050291">
+    <state width="2517" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1603126020278" />
+    <state width="2517" height="398" key="GridCell.Tab.0.right" timestamp="1603126020278">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1603111050291" />
+    <state width="2517" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1603126020278" />
     <state x="1097" y="390" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603110026972">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1097" y="390" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1603110026972" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1602772604524">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1603118597049">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1602772604524" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1603118597049" />
   </component>
 </project>
