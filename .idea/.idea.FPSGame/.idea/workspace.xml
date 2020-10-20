@@ -6,17 +6,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9d938904-eca1-40e5-9365-068a628a96f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Private/AIGuard.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Public/AIGuard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/AI/Behavior/BB_Patrol.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/AI/Behavior/BT_Patrol.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/AI/BlueprintExtensions/BP_AIPatrolController.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/AI/BlueprintExtensions/BP_AIPatrolPoint.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Content/AI/BlueprintExtensions/BP_Guard.uasset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Private/AIPatrolController.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Private/AIPatrolPoint.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Private/BT_SelectPatrolPoint.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Public/AIPatrolController.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Public/AIPatrolPoint.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Source/FPSGame/Public/BT_SelectPatrolPoint.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FPSGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_Guard.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_Guard.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap_BuiltData.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Maps/FirstPersonExampleMap_BuiltData.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FPSGame.uproject" beforeDir="false" afterPath="$PROJECT_DIR$/FPSGame.uproject" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/ExtractionZone.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/ExtractionZone.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Private/AIGuard.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Private/AIGuard.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/FPSGame/Public/AIGuard.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/FPSGame/Public/AIGuard.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,15 +47,23 @@
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/ExtractionZone.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/LaunchPad.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/LaunchPad.cpp" />
-        <option value="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSCharacter.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSCharacter.cpp" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSProjectile.cpp" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/FPSGameMode.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/ExtractionZone.cpp" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/FPSGameMode.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/AIPatrol.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/AI_Controller.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/AIPatrol.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/AI_Controller.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/BT_SelectPatrolPoint.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/FPSGame.Build.cs" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/BT_SelectPatrolPoint.cpp" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Public/AIGuard.h" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Public/AIPatrolController.h" />
         <option value="$PROJECT_DIR$/Source/FPSGame/Private/AIGuard.cpp" />
+        <option value="$PROJECT_DIR$/Source/FPSGame/Private/AIPatrolController.cpp" />
       </list>
     </option>
   </component>
@@ -304,6 +321,12 @@
       <workItem from="1602812716229" duration="4743000" />
       <workItem from="1602849383030" duration="1807000" />
       <workItem from="1603108371670" duration="11513000" />
+      <workItem from="1603134669836" duration="2306000" />
+      <workItem from="1603137423479" duration="886000" />
+      <workItem from="1603138418535" duration="801000" />
+      <workItem from="1603139347862" duration="1667000" />
+      <workItem from="1603141847501" duration="2017000" />
+      <workItem from="1603161986919" duration="8260000" />
     </task>
     <servers />
   </component>
@@ -316,22 +339,22 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="2517" height="398" key="GridCell.Tab.0.bottom" timestamp="1603126020278">
+    <state width="1282" height="397" key="GridCell.Tab.0.bottom" timestamp="1603197790421">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1603126020278" />
-    <state width="2517" height="398" key="GridCell.Tab.0.center" timestamp="1603126020278">
+    <state width="1282" height="397" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1603197790421" />
+    <state width="1282" height="397" key="GridCell.Tab.0.center" timestamp="1603197790420">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1603126020278" />
-    <state width="2517" height="398" key="GridCell.Tab.0.left" timestamp="1603126020278">
+    <state width="1282" height="397" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1603197790420" />
+    <state width="1282" height="397" key="GridCell.Tab.0.left" timestamp="1603197790420">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1603126020278" />
-    <state width="2517" height="398" key="GridCell.Tab.0.right" timestamp="1603126020278">
+    <state width="1282" height="397" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1603197790420" />
+    <state width="1282" height="397" key="GridCell.Tab.0.right" timestamp="1603197790421">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="398" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1603126020278" />
+    <state width="1282" height="397" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1603197790420" />
     <state x="1097" y="390" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1603110026972">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

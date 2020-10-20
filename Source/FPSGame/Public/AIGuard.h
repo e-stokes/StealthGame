@@ -5,9 +5,11 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "Perception/PawnSensingComponent.h"
-
 #include "AIGuard.generated.h"
 
+class UPawnSensingComponent;
+class UBehaviorTree;
+class UBlackboardComponent;
 UENUM(BlueprintType)
 enum class EAIState : uint8
 {
@@ -19,7 +21,8 @@ enum class EAIState : uint8
 };
 
 
-class UPawnSensingComponent;
+
+
 
 UCLASS()
 class FPSGAME_API AAIGuard : public ACharacter
@@ -30,9 +33,18 @@ public:
 	// Sets default values for this character's properties
 	AAIGuard();
 
+
+	// Blackboard component
+	UBlackboardComponent* BlackboardComponent;
+
+	UPROPERTY(EditAnywhere, Category = "AI")
+	UBehaviorTree* BehaviorTree;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(VisibleAnywhere, Category = "Components")
 	UPawnSensingComponent* PawnSensingComp;
@@ -58,11 +70,12 @@ protected:
 
 	UFUNCTION(BlueprintImplementableEvent, Category = "AI")
 	void OnStateChanged(EAIState NewState);
-	
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(EditDefaultsOnly, Category = "AI")
+	FName TargetKey = "SensedPawn";
+
+
+	
 
 
 };
