@@ -12,9 +12,11 @@
  * 
  */
 UCLASS()
+
 class FPSGAME_API AAIPatrolController : public AAIController
 {
 	GENERATED_BODY()
+	/*
 
 	// Behavior tree component
 	UBehaviorTreeComponent* BehaviorTreeComponent;
@@ -32,7 +34,7 @@ class FPSGAME_API AAIPatrolController : public AAIController
 	/*
 	UPROPERTY(EditDefaultsOnly, Category = "AI")
 	FName TargetKey = "SensedPawn";
-	*/
+	
 	
 
 	TArray<AActor*> PatrolPoints;
@@ -50,5 +52,6 @@ public:
 	// inline getter functions
 	FORCEINLINE UBlackboardComponent* GetBlackboardComponent() const { return BlackboardComponent; }
 	FORCEINLINE TArray<AActor*> GetPatrolPoints() const { return PatrolPoints; }
-	
+	*/
 };
+

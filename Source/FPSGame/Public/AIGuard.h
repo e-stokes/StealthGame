@@ -44,6 +44,8 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
+	virtual void Tick(float DeltaSeconds) override;
+
 	virtual void SetupPlayerInputComponent(UInputComponent* PlayerInputComponent) override;
 
 	UPROPERTY(VisibleAnywhere, Category = "Components")
@@ -63,8 +65,11 @@ protected:
 	UFUNCTION()
 	void ResetOrientation();
 
-
+	UPROPERTY(ReplicatedUsing=OnRep_GuardState)
 	EAIState GuardState;
+
+	UFUNCTION()
+	void OnRep_GuardState();
 
 	void SetGuardState(EAIState NewState);
 
@@ -73,6 +78,23 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "AI")
 	FName TargetKey = "SensedPawn";
+
+	// Basic AI without Blackboard + Behavior Tree
+	UPROPERTY(EditInstanceOnly, Category = "AI")
+	bool bPatrol;
+
+	// First of two patrol points
+	UPROPERTY(EditInstanceOnly, Category = "AI", meta = (EditCondition="bPatrol"))
+	AActor* FirstPatrolPoint;
+
+	// Second patrol point
+	UPROPERTY(EditInstanceOnly, Category = "AI", meta = (EditCondition="bPatrol"))
+	AActor* SecondPatrolPoint;
+
+	// Current point of actor
+	AActor* CurrentPatrolPoint;
+
+	void MoveToNextPatrolPoint();
 
 
 	

@@ -7,7 +7,7 @@
 #include "AIPatrolPoint.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "BT_SelectPatrolPoint.h"
-
+/*
 EBTNodeResult::Type UBT_SelectPatrolPoint::ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory)
 {
     AAIPatrolController* AICon = Cast<AAIPatrolController>(OwnerComp.GetAIOwner());;
@@ -40,3 +40,4 @@ EBTNodeResult::Type UBT_SelectPatrolPoint::ExecuteTask(UBehaviorTreeComponent& O
 
     return EBTNodeResult::Failed;
 }
+*/

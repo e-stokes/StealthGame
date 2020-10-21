@@ -11,9 +11,11 @@
 #include "BehaviorTree/BehaviorTree.h"
 #include "Kismet/GameplayStatics.h"
 
-
+/*
 AAIPatrolController::AAIPatrolController()
 {
+   
+    
     // Initialize blackboard and behavior tree
     BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>(TEXT("BehaviorTreeComponent"));
     BlackboardComponent = CreateDefaultSubobject<UBlackboardComponent>(TEXT("BlackboardComponent"));
@@ -23,10 +25,13 @@ AAIPatrolController::AAIPatrolController()
     PlayerKey = "Target";
 
     CurrentPatrolPoint = 0;
+   
+    
 }
 
 void AAIPatrolController::OnPossess(APawn* InPawn)
 {
+    /*
     Super::OnPossess(InPawn);
 
     // Get reference to character
@@ -44,6 +49,7 @@ void AAIPatrolController::OnPossess(APawn* InPawn)
 
         BehaviorTreeComponent->StartTree(*AICharacter->BehaviorTree);
     }
+    
 }
 
 void AAIPatrolController::SetHeardTarget(APawn* HeardTarget)
@@ -54,6 +60,7 @@ void AAIPatrolController::SetHeardTarget(APawn* HeardTarget)
         //BlackboardComponent->SetValueAsObject(TargetKey, HeardTarget);
     }
 }
+*/
 
 
 
